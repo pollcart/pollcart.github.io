@@ -1,0 +1,1 @@
+PollCart License for Github
