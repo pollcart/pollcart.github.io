@@ -1,118 +1,141 @@
-<html class=""><head>
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<html class="">
+<head>
+    <link rel="stylesheet prefetch"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <style>
         * {
-        font-family: helveticaneue,'helvetica neue',helvetica-neue,helvetica,sans-serif;
-    }
+            font-family: helveticaneue, 'helvetica neue', helvetica-neue, helvetica, sans-serif;
+        }
 
-    div.tabs-group {
-        background-color: #bbb;
-    }
-    div.tabs-group div.container div.row div.col-3 {
-        box-shadow: 0 0 0 0 black;
-        height: 50px;
-        overflow: hidden;
-    }
-    div.tabs-group div.container div.row div.col-3 input {
-        visibility: hidden;
-        position: absolute;
-    }
-    div.tabs-group div.container div.row div.col-3 input:checked + label {
-        /*
-        background-image: url(https://www.axway.com/sites/default/files/styles/panopoly_image_original/public/axway-tab-background.png);
-        */
-        background-size: cover;
-        background-position: top right;
-        background-color: #711b44;
-        background-repeat: no-repeat;
-        color: #eee;
-    }
-    div.tabs-group div.container div.row div.col-3 input:checked + label:hover {
-        box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0) !important;
-    }
-    div.tabs-group div.container div.row div.col-3 label {
-        text-align: center;
-        width: calc(100% + 30px);
-        margin-bottom: 0 !important;
-        color: #444;
-        height: 100%;
-        position: relative;
-        line-height: 18px;
-        font-size: 16px;
-        vertical-align: middle !important;
-        left: -15px;
-        padding: 5px 10px;
-        box-shadow: inset 0 0 0 1000px rgba(187, 187, 187, 0);
-    }
-    div.tabs-group div.container div.row div.col-3 label:hover {
-        opacity: 1000;
-        background-size: cover;
-        background-position: top right;
-        background-repeat: no-repeat;
-        box-shadow: inset 0 0 0 1000px rgba(150, 150, 150, 0.4);
-    }
-    div.tabs-group div.container div.row div.col-3 label:clicked {
-        box-shadow: inset 0 0 0 1000px rgba(187, 187, 187, 0);
-    }
-    div.tabs-group div.container div.row div.col-3 label p {
-        text-align: center;
-        position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
+        div.tabs-group {
+            background-color: #bbb;
+        }
 
-    #ecard {
-        width: 100%;
-        height: 250px;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(images/30secPollCartLogo.png);
-        background-color: #711b44;
-    }
+        div.tabs-group div.container div.row div.col-3 {
+            box-shadow: 0 0 0 0 black;
+            height: 50px;
+            overflow: hidden;
+        }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
+        div.tabs-group div.container div.row div.col-3 input {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        div.tabs-group div.container div.row div.col-3 input:checked + label {
+            /*
+            background-image: url(https://www.axway.com/sites/default/files/styles/panopoly_image_original/public/axway-tab-background.png);
+            */
+            background-size: cover;
+            background-position: top right;
+            background-color: #711b44;
+            background-repeat: no-repeat;
+            color: #eee;
+        }
+
+        div.tabs-group div.container div.row div.col-3 input:checked + label:hover {
+            box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0) !important;
+        }
+
+        div.tabs-group div.container div.row div.col-3 label {
+            text-align: center;
+            width: calc(100% + 30px);
+            margin-bottom: 0 !important;
+            color: #444;
+            height: 100%;
+            position: relative;
+            line-height: 18px;
+            font-size: 16px;
+            vertical-align: middle !important;
+            left: -15px;
+            padding: 5px 10px;
+            box-shadow: inset 0 0 0 1000px rgba(187, 187, 187, 0);
+        }
+
+        div.tabs-group div.container div.row div.col-3 label:hover {
+            opacity: 1000;
+            background-size: cover;
+            background-position: top right;
+            background-repeat: no-repeat;
+            box-shadow: inset 0 0 0 1000px rgba(150, 150, 150, 0.4);
+        }
+
+        div.tabs-group div.container div.row div.col-3 label:clicked {
+            box-shadow: inset 0 0 0 1000px rgba(187, 187, 187, 0);
+        }
+
+        div.tabs-group div.container div.row div.col-3 label p {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
         #ecard {
-            height: 300px;
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center center;
+            background-image: url(images/30secPollCartLogo.png);
+            background-color: #711b44;
         }
-    }
-    @media (min-width: 1200px) {
-        #ecard {
-            height: 350px;
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            #ecard {
+                height: 300px;
+            }
         }
-    }
-    @media (max-width: 479px) {
-        div.tabs-group div.container div.col-3 label {
-            font-size: 8px !important;
-            line-height: 9px !important;
+
+        @media (min-width: 1200px) {
+            #ecard {
+                height: 350px;
+            }
         }
-    }
-    @media (min-width: 480px) and (max-width: 768px) {
-        div.tabs-group div.container div.col-3 label {
-            font-size: 12px;
-            line-height: 16px !important;
+
+        @media (max-width: 479px) {
+            div.tabs-group div.container div.col-3 label {
+                font-size: 8px !important;
+                line-height: 9px !important;
+            }
         }
-    }
-    </style></head><body>
+
+        @media (min-width: 480px) and (max-width: 768px) {
+            div.tabs-group div.container div.col-3 label {
+                font-size: 12px;
+                line-height: 16px !important;
+            }
+        }
+    </style>
+</head>
+<body>
 <!--
 With help from
 http://jsfiddle.net/F6zPc/8/
 http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
 -->
-<div class="bootstrap">
-    <div class="tabs-group">
-        <div class="container">
-            <div class="row">
-                <div class="col-3"><input type="radio" id="tab-one" name="banner-tab-list" class="banner-tab-list" checked="" value="yourvalue1" onclick="CB(this.value);"><label for="tab-one"><p>TAB ONE</p></label></div>
-                <div class="col-3"><input type="radio" id="tab-two" name="banner-tab-list" class="banner-tab-list" value="yourvalue2" onclick="CB(this.value);"><label for="tab-two"><p>TAB TWO</p></label></div>
-                <div class="col-3"><input type="radio" id="tab-three" name="banner-tab-list" class="banner-tab-list" value="yourvalue3" onclick="CB(this.value);"><label for="tab-three"><p>SUPER CALLIE FRAGILE TAB</p></label></div>
-                <div class="col-3"><input type="radio" id="tab-four" name="banner-tab-list" class="banner-tab-list" value="yourvalue4" onclick="CB(this.value);"><label for="tab-four"><p>TAB FOUR</p></label></div>
-            </div>
+<div class="tabs-group">
+    <div class="container">
+        <div class="row">
+            <div class="col-3"><input type="radio" id="tab-one" name="banner-tab-list" class="banner-tab-list"
+                                      checked="" value="yourvalue1" onclick="CB(this.value);"><label for="tab-one"><p>
+                TAB ONE</p></label></div>
+            <div class="col-3"><input type="radio" id="tab-two" name="banner-tab-list" class="banner-tab-list"
+                                      value="yourvalue2" onclick="CB(this.value);"><label for="tab-two"><p>TAB TWO</p>
+            </label></div>
+            <div class="col-3"><input type="radio" id="tab-three" name="banner-tab-list" class="banner-tab-list"
+                                      value="yourvalue3" onclick="CB(this.value);"><label for="tab-three"><p>SUPER
+                CALLIE FRAGILE TAB</p></label></div>
+            <div class="col-3"><input type="radio" id="tab-four" name="banner-tab-list" class="banner-tab-list"
+                                      value="yourvalue4" onclick="CB(this.value);"><label for="tab-four"><p>TAB FOUR</p>
+            </label></div>
         </div>
     </div>
-    <div id="ecard"></div><img src="images/PollCart-Infographic-Evolution-Of-A-Checkout-Revolution.jpg"
-</div><div></div>
+</div>
+<div id="ecard"></div>
+<div class="container"><div class="row"><div class="col-12 col-sm-4"><img src="images/pollcart-logo-shrunkbutbig-1024x170.png"></div></div>
+</div>
 <script>function CB(bg) {
     var url;
     if (bg == 'yourvalue1') {
@@ -131,4 +154,5 @@ http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
 }
 //# sourceURL=pen.js
 </script>
-</body></html>
+</body>
+</html>
