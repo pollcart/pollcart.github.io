@@ -71,40 +71,35 @@ div.tabs-group div.container div.row div.col-3 label p {
 
 #ecard {
     width: 100%;
-    height: 500px !important;
+    height: auto !important;
     background-position: center center;
     background-image: url(images/hero-five.jpg);
     background-size: cover;
     background-color: white;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
+    padding-bottom: 50px;
 }
 
 /*
 m or medium media query
 */
 @media (min-width: 768px) and (max-width: 991px) {
-    #ecard {
-        height: 400px;
-    }
+
 }
 
 /*
 lg or large media query
 */
 @media (min-width: 992px) and (max-width: 1199px) {
-    #ecard {
-        height: 450px;
-    }
+
 }
 
 /*
 xl media query
 */
 @media (min-width: 1200px) {
-    #ecard {
-        height: 500px;
-    }
+
 }
 
 /*
@@ -116,9 +111,7 @@ xs or (default) media query
         line-height: 9px !important;
     }
 
-    #ecard {
-        height: 300px;
-    }
+
 }
 
 /*
@@ -130,9 +123,7 @@ sm or small media query
         line-height: 16px !important;
     }
 
-    #ecard {
-        height: 350px;
-    }
+
 }
 
 /*
@@ -183,3 +174,92 @@ img.gray-image {
 #slide-2 {display:none}
 #slide-3 {display:none}
 #slide-4 {display:none}
+
+/*
+Asset CTA Boxes
+*/
+div.asset-triangle-cta-box {
+    height: 125px;
+    background-size: auto 125px;
+    background-position: 125px bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    display: none;
+}
+div.asset-triangle-cta-box:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 125px solid white;
+    border-right: 125px solid transparent;
+    content: "";
+    left: 125px;
+    z-index: 0;
+}
+div.asset-triangle-cta-box p {
+    position: absolute;
+    width: 60%;
+    padding: 10px 0 0 10px;
+    font-size: 16px;
+    line-height: 22px;
+}
+div.asset-triangle-cta-box button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+}
+div.asset-triangle-cta-box.asset-box-one {
+    background-image: url(http://lorempixel.com/400/125/abstract/);
+}
+div.asset-triangle-cta-box.asset-box-two {
+    background-image: url(http://lorempixel.com/400/126/animal/);
+}
+div.asset-triangle-cta-box.asset-box-three {
+    background-image: url(http://lorempixel.com/400/127/people/);
+}
+div.asset-triangle-cta-box.asset-box-four {
+    background-image: url(http://lorempixel.com/400/128/abstract/);
+}
+div.asset-triangle-cta-box.asset-box-five {
+    background-image: url(http://lorempixel.com/400/129/city/);
+}
+div.asset-triangle-cta-box.asset-box-six {
+    background-image: url(http://lorempixel.com/400/130/technics/);
+}
+div.asset-triangle-cta-box.asset-box-seven {
+    background-image: url(http://lorempixel.com/400/131/abstract/);
+}
+div.asset-triangle-cta-box.asset-box-eight {
+    background-image: url(http://lorempixel.com/400/132/sports/);
+}
+div.asset-triangle-cta-box.asset-box-nine {
+    background-image: url(http://lorempixel.com/400/133/people/);
+}
+div.asset-triangle-cta-box.asset-box-ten {
+    background-image: url(http://lorempixel.com/400/134/abstract/);
+}
+div.asset-triangle-cta-box.asset-box-eleven {
+    background-image: url(http://lorempixel.com/400/210/nature/);
+}
+div.asset-triangle-cta-box.asset-box-twelve {
+    background-image: url(http://lorempixel.com/600/135/transport/);
+}
+
+@media (max-width: 479px) {
+
+}
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+
+}
