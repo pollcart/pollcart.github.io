@@ -186,7 +186,9 @@ div.asset-triangle-cta-box {
     position: relative;
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    /*
     display: none;
+    */
 }
 div.asset-triangle-cta-box:before {
     position: absolute;
