@@ -1,0 +1,64 @@
+/*body {
+    overflow-y: hidden;
+}*/
+.contact-bank-8675309 {
+    height: 120px;
+    background-color: black;
+    width: 300px;
+    position: fixed;
+    right: calc(50% - 150px);
+    line-height: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+    top: 100vh;
+    transition: top 1s ease;
+    border-radius: 7px 7px 0 0;
+    font-family: sans-serif;
+    overflow-y: hidden;
+    z-index: 99999999999999;
+}
+
+.contact-bank-8675309:before {
+    content: "Can't decide? Ask some friends!"
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-bank-8675309 {
+        right: 50px;
+    }
+}
+.contact-bank-8675309.contact-bank-8675309-visible {
+    top: calc(100vh - 120px);
+}
+.contact-bank-8675309 button {
+    display: block;
+    margin: 10px auto;
+}
+.contact-bank-8675309 button:after {
+    content: "Ask some friends!"
+}
+
+.contact-bank-8675309 .leadinModal-close:before {
+    display: inline !important;
+    -webkit-border-radius: 0.33em;
+    -moz-border-radius: 0.33em;
+    -ms-border-radius: 0.33em;
+    -o-border-radius: 0.33em;
+    border-radius: 0.33em;
+    content: "\00D7";
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 25px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    color: #bbb;
+    background: transparent;}
+
+.contact-bank-8675309 a.leadinModal-close {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
