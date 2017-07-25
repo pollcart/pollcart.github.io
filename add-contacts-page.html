@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- Move "Text on add contacts page" into container -->
+            <div style="color: black">ASK SOME FRIENDS: You&rsquo;ll enter the email or phone number of friends, family,
+                or experts,
+                then check out. Half or more &ldquo;yes&rdquo; votes, your purchase completes. Otherwise, it&rsquo;s
+                canceled with
+                no charge. Shop with friends! Please note, the poll may be bypassed if more than one item is in the
+                cart.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Expand columns using bootstrap classes in mobile breakpoint -->
+        <div class="col-xs-12 col-sm-6"><h4>Emails:</h4>
+            <input type="text" id='emailtags' class="bootstrap-tagsinput" value="" data-role="tagsinput">
+            Press tab after entering each email or add a comma to confirm each address.
+        </div>
+        <div class="col-xs-12 col-sm-6"><h4>Personal Note:</h4>
+            <textarea type="text" id='personal_note' maxlength="123" class="bootstrap-tagsinput"
+                      style="width: 100%;"></textarea>
+            <span id="count"></span></div>
+    </div>
+    <!-- Put phone script in container -->
+    <div class="row">
+        <div class="col-xs-12">
+
+            <script>
+                var el_t = document.getElementById('personal_note');
+                var length = el_t.getAttribute("maxlength");
+                var el_c = document.getElementById('count') + " characters left";
+                el_c.innerHTML = length;
+                el_t.onkeyup = function () {
+                    document.getElementById('count').innerHTML = (length - this.value.length) + " characters left";
+                };
+            </script>
+
+            <h4>Phone Numbers:</h4>
+            <span class="phones">
+				<input type="text" id='phonetags' value="" data-role="tagsinput">
+			</span>
+            <div id="result">
+                <input id="phone" type="tel">
+                <button type="button" class="btn btn-success" style='margin-left: 11px;height: 34px;'
+                        onclick='addphone()'>Add
+                    phone
+                </button>
+                <span id="valid-msg" class="hide"></span>
+                <span id="error-msg" class="hide"></span>
+            </div>
+            Click “Add Phone” after each number in any format. It will appear above the input on success with a flag or
+            country code such as +1 for the US.
+            <h4>Google contacts:</h4>
+            <button type="button" id='importGoogleButton' class="btn btn-primary" onclick="importGoogle()">Import google
+                contacts
+            </button>
+            <div id='googleContainer' style='display:none'>
+                <div id="authorize-div" style="display: none">
+                    <!--Button for the user to click to initiate auth sequence -->
+                    <button id="authorize-button" class="pollbtn" onclick="handleAuthClick(event)">
+                        Authorize
+                    </button>
+                </div>
+                <select style='display:none' data-placeholder="Select contacts" id='chosen' class="chosen-select"
+                        multiple
+                        tabindex="4">
+                    <select>
+            </div>
+        </div>
+    </div>
+</div>
